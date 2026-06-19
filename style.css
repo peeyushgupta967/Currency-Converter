@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #14248A;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #14248A;
+}
+
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    height: 400px;
+    width: 500px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);  /* deeper shadow */
+}
+.form {
+    margin: 2rem 0 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form select, button, input {
+    width:100%;
+    border:none;
+    outline:none;
+    border-radius:0.75rem;
+}
+
+form input{
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left:0.5rem;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:2rem;
+}
+
+
+.dropdown i {
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: #14248A;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.dropdown i:hover {
+    transform: rotate(180deg);
+}
+
+.select-container img {
+    max-width: 2rem;
+    
+}
+
+.select-container {
+    display:flex;
+    width:6rem;
+    /* background-color: #fb3432; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    border: 1px solid lightgray;
+
+
+}
+
+.select-container select {
+    font-size: 1rem;
+    width: auto;
+    /* padding: 0.5rem; */
+}
+
+
+.msg {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    color: #14248A;
+    font-weight: 600;
+    text-align: center;
+    background-color: #f0f4ff;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    min-height: 3rem;
+}
+/* form button {
+    font-size: 1.25rem;
+    background-color: #fb3432;
+    color: #fff;
+    height: 3rem;
+    cursor: pointer;
+} */
+form button {
+    font-size: 1.25rem;
+    background-color: #fb3432;
+    color: #fff;
+    height: 3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+form button:hover {
+    background-color: #d42220;
+}
+
+form button:active {
+    transform: scale(0.98);
+}
